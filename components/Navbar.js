@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const links = [
     { href: "/", label: "Home", active: "home", newTab: false},
     { href: "/about", label: "About", active: "about", newTab: false},
+    { href: "https://market.nextcitizens.net", label: "Marketplace", active: "market", newTab: false},
     { href: "https://docs.nextcitizens.net", label: "Documentation", active: "documentation", newTab: false },
     { href: "https://discord.gg/BgscMfAtJj", label: "Discord", active: "discord", newTab: true },
 ]
