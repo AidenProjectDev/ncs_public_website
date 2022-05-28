@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
 import { loadStarsPreset } from "tsparticles-preset-stars";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -54,6 +55,19 @@ export default function Home() {
             <div className={styles.mainContainer}>
                 <h1 className={styles.mainTitle}>NextCitizens</h1>
                 <h2 className={styles.subTitle}>The best FiveM framework for your server</h2>
+
+                <div className={styles.buttonContainer}>
+                    <Link href="https://docs.nextcitizens.net">
+                        <a className={styles.button} style={{marginRight: '1rem'}}>
+                            Get started
+                        </a>
+                    </Link>
+                    <Link href="https://github.com/NextCitizens">
+                        <a className={styles.buttonOutline} style={{marginLeft: '1rem'}}>
+                            GitHub
+                        </a>
+                    </Link>
+                </div>
             </div>
 
             <Particles
