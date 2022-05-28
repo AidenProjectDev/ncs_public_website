@@ -2,8 +2,26 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar";
+import Particles from "react-tsparticles";
+import { Engine } from "tsparticles-engine";
+import { loadStarsPreset } from "tsparticles-preset-stars";
 
 export default function Home() {
+
+    const particlesInit = async (engine) => {
+        await loadStarsPreset(engine);
+    };
+
+    const options = {
+        preset: "stars",
+    //    background
+        background: {
+            color: {
+                value: "#2b3741"
+            }
+        }
+    };
+
     return (
         <>
             <Head>
@@ -33,6 +51,12 @@ export default function Home() {
                 <h1 className={styles.mainTitle}>NextCitizens</h1>
                 <h2 className={styles.subTitle}>The best FiveM framework for your server</h2>
             </div>
+
+            <Particles
+                id={"particles-js"}
+                init={particlesInit}
+                options={options}
+            />
         </>
     )
 }
