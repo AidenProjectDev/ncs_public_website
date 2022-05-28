@@ -4,6 +4,7 @@
     --color-primary: #ff9f43;
     --color-secondary: #ffa502;
     --color-black: #1e272e;
+    --color-black-light: #2b3741;
     --color-gray: #636e72;
     --color-white: #dfe6e9;
 }
@@ -14,6 +15,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background: var(--color-black-light);
+}
+
+/*
+ * Navbar styles
+ */
 .navbar {
     background: var(--color-black);
     height: 75px;
@@ -38,7 +46,7 @@
     height: 100%;
     padding: 0 1rem;
     position: relative;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 #links-container a:not(.active)::before {

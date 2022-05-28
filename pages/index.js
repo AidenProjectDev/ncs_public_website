@@ -30,7 +30,13 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
             <Navbar active={"home"}/>
+
+            <div className={styles.mainContainer}>
+                <h1 className={styles.mainTitle}>NextCitizens</h1>
+                <h2 className={styles.subTitle}>The best FiveM framework for your server</h2>
+            </div>
         </>
     )
 }
