@@ -14,10 +14,14 @@ export default function Home() {
 
     const options = {
         preset: "stars",
-    //    background
         background: {
             color: {
                 value: "#2b3741"
+            }
+        },
+        particles: {
+            move: {
+                speed: 1
             }
         }
     };
