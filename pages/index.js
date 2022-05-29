@@ -28,8 +28,6 @@ export default function Home() {
         }
     };
 
-    const codeString = '(num) => num + 1';
-
     return (
         <>
             <Head>
