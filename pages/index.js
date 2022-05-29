@@ -8,6 +8,7 @@ import { loadStarsPreset } from "tsparticles-preset-stars";
 import Link from "next/link";
 
 export default function Home() {
+    const codeSimplicity = "function API_Player:getClosest()\n\treturn (playerClosest), (playerClosestDistance)\nend";
 
     const particlesInit = async (engine) => {
         await loadStarsPreset(engine);
@@ -26,6 +27,8 @@ export default function Home() {
             }
         }
     };
+
+    const codeString = '(num) => num + 1';
 
     return (
         <>
@@ -85,6 +88,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={styles.row}>
+                        <h3>2. Simplicité</h3>
                     </div>
                 </div>
             </div>
