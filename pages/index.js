@@ -75,6 +75,19 @@ export default function Home() {
                 init={particlesInit}
                 options={options}
             />
+
+            <div className={styles.container}>
+                <div className={styles.column}>
+                    <div className={styles.row}>
+                        <h3>1. Simplicité</h3>
+                        <p>
+                            NextCitizens est un framework pour créer un serveur FiveM. Il est simple à utiliser et à mettre en place.
+                        </p>
+                    </div>
+                    <div className={styles.row}>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
