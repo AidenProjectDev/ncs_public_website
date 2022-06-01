@@ -7,6 +7,8 @@ import { Engine } from "tsparticles-engine";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import Link from "next/link";
 import {useEffect} from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function Home() {
     const codeSimplicity = "function API_Player:getClosest()\n\treturn (playerClosest), (playerClosestDistance)\nend";
@@ -87,6 +89,9 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={styles.row}>
+                        <SyntaxHighlighter language="lua" style={monokaiSublime}>
+                            {codeSimplicity}
+                        </SyntaxHighlighter>
                     </div>
                 </div>
             </div>
