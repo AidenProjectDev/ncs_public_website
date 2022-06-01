@@ -29,11 +29,6 @@ export default function Home() {
         }
     };
 
-    useEffect(() => {
-        codeHighlight(codeSimplicity);
-    }, []);
-
-
     return (
         <>
             <Head>
@@ -92,7 +87,6 @@ export default function Home() {
                         </p>
                     </div>
                     <div className={styles.row}>
-                        <h3>2. Simplicité</h3>
                     </div>
                 </div>
             </div>
