@@ -6,6 +6,7 @@ import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import Link from "next/link";
+import {useEffect} from "react";
 
 export default function Home() {
     const codeSimplicity = "function API_Player:getClosest()\n\treturn (playerClosest), (playerClosestDistance)\nend";
@@ -27,6 +28,11 @@ export default function Home() {
             }
         }
     };
+
+    useEffect(() => {
+        codeHighlight(codeSimplicity);
+    }, []);
+
 
     return (
         <>
@@ -80,9 +86,9 @@ export default function Home() {
             <div className={styles.container}>
                 <div className={styles.column}>
                     <div className={styles.row}>
-                        <h3>1. Simplicité</h3>
+                        <h3>1. Simplicity</h3>
                         <p>
-                            NextCitizens est un framework pour créer un serveur FiveM. Il est simple à utiliser et à mettre en place.
+                            NextCitizens is the simpliest framework to build a FiveM server. It is easy to use and it is very easy to learn.
                         </p>
                     </div>
                     <div className={styles.row}>
