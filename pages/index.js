@@ -82,13 +82,13 @@ export default function Home() {
 
             <div className={styles.container}>
                 <div className={styles.column}>
-                    <div className={styles.row}>
+                    <div className={styles.rowLeft}>
                         <h3>1. Simplicity</h3>
                         <p>
                             NextCitizens is the simpliest framework to build a FiveM server. It is easy to use and it is very easy to learn.
                         </p>
                     </div>
-                    <div className={styles.row}>
+                    <div className={styles.rowRight}>
                         <SyntaxHighlighter language="lua" style={monokaiSublime}>
                             {codeSimplicity}
                         </SyntaxHighlighter>

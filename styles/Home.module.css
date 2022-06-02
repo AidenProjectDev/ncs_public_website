@@ -98,10 +98,16 @@
     height: 100%;
 }
 
-.row h3 {
+.rowLeft h3,
+.rowRight h3 {
     font-size: 38px;
 }
 
-.row p {
+.rowRight p,
+.rowRight p {
     font-size: 18px;
+}
+
+.rowRight {
+    width: 40%;
 }
