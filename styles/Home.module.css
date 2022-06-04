@@ -98,16 +98,27 @@
     height: 100%;
 }
 
+.rowLeft {
+    margin-right: .5rem;
+    margin-bottom: 5rem;
+}
+.rowRight {
+    margin-left: .5rem;
+    margin-top: 10rem;
+}
+
 .rowLeft h3,
 .rowRight h3 {
     font-size: 38px;
 }
 
-.rowRight p,
+.rowLeft p,
 .rowRight p {
     font-size: 18px;
 }
 
-.rowRight {
-    width: 40%;
+.rowLeft pre,
+.rowRight pre {
+    border-radius: 8px;
+    padding: 1rem 2rem !important;
 }
