@@ -58,7 +58,7 @@ export default function Home() {
 
             <div className={styles.mainContainer}>
                 <h1 className={styles.mainTitle}>NextCitizens</h1>
-                <h2 className={styles.subTitle}>The best FiveM framework for your server</h2>
+                <h2 className={styles.subTitle}>The future of FiveM</h2>
 
                 <div className={styles.buttonContainer}>
                     <Link href="https://docs.nextcitizens.net">
