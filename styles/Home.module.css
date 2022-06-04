@@ -86,7 +86,7 @@
 .container {
     background: var(--color-black);
     position: relative;
-    height: 100vh;
+    padding: 5rem 0;
 }
 
 .column {
@@ -94,16 +94,16 @@
     justify-content: space-evenly;
     align-items: center;
     max-width: 960px;
-    margin: 0 auto;
-    height: 100%;
+    margin: 5rem auto;
 }
 
 .rowLeft {
-    margin-right: .5rem;
+    margin-right: 1rem;
     margin-bottom: 5rem;
 }
+
 .rowRight {
-    margin-left: .5rem;
+    margin-left: 1rem;
     margin-top: 10rem;
 }
 
@@ -121,4 +121,21 @@
 .rowRight pre {
     border-radius: 8px;
     padding: 1rem 2rem !important;
+}
+
+.column:nth-of-type(2) .rowLeft {
+    margin-left: 1rem;
+}
+.column:nth-of-type(2) .rowRight {
+    margin-right: 1rem;
+}
+
+.rowCentered h3 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.rowCentered p {
+    font-size: 18px;
+    text-align: center;
 }

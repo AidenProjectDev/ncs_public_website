@@ -94,6 +94,29 @@ export default function Home() {
                         </SyntaxHighlighter>
                     </div>
                 </div>
+
+                <div className={styles.column}>
+                    <div className={styles.rowRight}>
+                        <SyntaxHighlighter language="lua" style={monokaiSublime}>
+                            {codeSimplicity}
+                        </SyntaxHighlighter>
+                    </div>
+                    <div className={styles.rowLeft}>
+                        <h3>2. Powerful</h3>
+                        <p>
+                            We are the most powerful FiveM framework. You can use our new features to program your best scripts.
+                        </p>
+                    </div>
+                </div>
+
+                <div className={styles.column}>
+                    <div className={styles.rowCentered}>
+                        <h3>3. Open source</h3>
+                        <p>
+                            Our project is completely open source. Thus, everyone can contribute to the project to make it better.
+                        </p>
+                    </div>
+                </div>
             </div>
         </>
     )
