@@ -139,3 +139,11 @@
     font-size: 18px;
     text-align: center;
 }
+
+.column img {
+    border-radius: 16px;
+}
+
+.column h3 svg {
+    height: 28px;
+}

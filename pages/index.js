@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
 import { loadStarsPreset } from "tsparticles-preset-stars";
@@ -117,7 +118,20 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
+
+                <div className={"banner"}>
+                    <div className={"banner-content"}>
+                        <h4>Join our Discord</h4>
+                        <h5>
+                            To get announcements about new features and updates.
+                        </h5>
+                    </div>
+                    <a className={styles.buttonOutline} href="https://discord.gg/BgscMfAtJj" target={"_blank"}>Official Discord</a>
+                </div>
+
             </div>
+
+            <Footer />
         </>
     )
 }
